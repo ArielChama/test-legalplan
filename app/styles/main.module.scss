@@ -24,11 +24,12 @@
   text-align: center;
   color: #0000008A;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .card {
   width: 450px;
-  height: 444px;
+  min-height: 444px;
   padding: 32px;
   background-color: #FFFFFF;
   border: 1px solid #EAECF0;
