@@ -38,7 +38,7 @@ export default function Home() {
     setTasks((prevTasks) => [...prevTasks, newTaskObject])
   }
 
-  const deleteTask = (id: number) => {
+  const deleteTask = () => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== taskToDelete));
     setTaskToDelete(0);
   }
@@ -70,7 +70,7 @@ export default function Home() {
             <h3 className={styles.subtitle}>Suas tarefas de hoje</h3>
 
             {tasks.filter((task) => !task.completed).map((task) => (
-              <div className={styles.card_item}>
+              <div key={task.id} className={styles.card_item}>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
                   <input type="checkbox" checked={task.completed} onChange={() => toggleTaskCompletion(task.id)} />
                   <p className={styles.card_task}>{task.title}</p>
@@ -88,7 +88,7 @@ export default function Home() {
               <h3 className={styles.subtitle}>Tarefas finalizadas</h3>
 
               {tasks.filter((task) => task.completed).map((task) => (
-                <div className={styles.card_item}>
+                <div key={task.id} className={styles.card_item}>
                   <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
                     <input type="checkbox" checked={task.completed} onChange={() => toggleTaskCompletion(task.id)} />
                     <p className={styles.card_task} style={{ textDecoration: 'line-through', color: '#0000008A' }}>{task.title}</p>
