@@ -1,0 +1,109 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.subtitle {
+  text-align: center;
+  color: #0000008A;
+  font-size: 16px;
+}
+
+.card {
+  width: 450px;
+  height: 444px;
+  padding: 32px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.card_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px dashed #EAECF0;
+}
+
+.card_task {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.button {
+  width: 520px;
+  height: 51px;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(7, 150, 211, 1) 0%, rgba(83, 192, 240, 1) 50%);
+  border: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*
+  Main Styles
+*/
+
+.container_modal {
+  position: fixed;
+  z-index: 1000;
+  background-color: #ffffffd2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  background-color: #dddddd;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 24 48 #1018282E;
+}
+
+.input {
+  border-radius: 8px;
+  border: transparent;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.modal .button_stop {
+  background: #E7EEFB;
+  color: #000000;
+  border: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal .button_create {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(7, 150, 211, 1) 0%, rgba(83, 192, 240, 1) 50%);
+  border: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
