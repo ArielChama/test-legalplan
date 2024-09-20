@@ -1,3 +1,6 @@
+/*
+  All styles
+*/
 .main {
   display: flex;
   align-items: center;
@@ -14,7 +17,7 @@
 
 .title {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -57,8 +60,14 @@
   cursor: pointer;
 }
 
+.buttonDelete {
+  background: white;
+  border: transparent;
+  cursor: pointer;
+}
+
 /*
-  Main Styles
+  Modal Styles
 */
 
 .container_modal {
@@ -76,21 +85,30 @@
 
 .modal {
   position: fixed;
-  background-color: #dddddd;
+  background-color: #FFFFFF;
   padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 24 48 #1018282E;
+  border-radius: 16px;
+  box-shadow: 0px 24px 48px #1018282E;
 }
 
 .input {
   border-radius: 8px;
-  border: transparent;
-  padding: 10px;
-  width: 100%;
-  margin: 10px 0px;
+  border: 1px solid #D7DDE9;
+  padding: 16px;
+  width: 336px;
+  margin: 20px 0px;
 }
 
-.modal .button_stop {
+.button_group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px
+}
+
+.button_stop {
+  width: 185px;
+  padding: 16px 24px 16px 24px !important;
   background: #E7EEFB;
   color: #000000;
   border: transparent;
@@ -99,11 +117,18 @@
   cursor: pointer;
 }
 
-.modal .button_create {
+.button_create, .button_delete {
+  width: 185px;
+  padding: 16px 24px 16px 24px !important;
+  padding: 100px;
   color: #fff;
   background: linear-gradient(90deg, rgba(7, 150, 211, 1) 0%, rgba(83, 192, 240, 1) 50%);
   border: transparent;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.button_delete {
+  background: linear-gradient(90deg, rgba(211,7,7,1) 0%, rgba(240,83,83,1) 50%);
 }
